@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+//apply plugin: 'com.google.gms.google-services'
+//apply plugin: 'com.google.gms:google-services:2.0.0-alpha3'
+android {
+    compileSdkVersion 26
+    buildToolsVersion '28.0.3'
+    repositories { mavenCentral() }
+    defaultConfig {
+        applicationId "com.fitnessfundoo.www.fitnessfundoo"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 12
+        versionName "2.2"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.google.firebase:firebase-database:16.1.0'
+    implementation 'com.google.firebase:firebase-storage:16.1.0'
+    implementation 'com.google.firebase:firebase-auth:16.2.1'
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.mcxiaoke.volley:library-aar:1.0.0'
+    implementation 'com.facebook.android:facebook-login:4.40.0'
+    //   implementation 'com.google.android.gms:play-services-appindexing:11.4.0'
+    implementation 'com.google.firebase:firebase-core:16.0.8'
+    implementation 'com.google.firebase:firebase-messaging:17.6.0'
+//    implementation 'com.google.firebase:firebase-database:15.0.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:recyclerview-v7:26.1.0'
+    implementation 'com.google.android.gms:play-services-maps:16.1.0'
+    //   implementation 'com.google.android.gms:play-services:15.0.0'
+    implementation 'io.branch.sdk.android:library:2.+'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.firebase:firebase-appindexing:17.1.0'
+    implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+    // dexter runtime permissions
+    implementation 'com.karumi:dexter:4.2.0'
+
+    // ButterKnife view binding
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    // Glide image library
+    implementation 'com.github.bumptech.glide:glide:3.7.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

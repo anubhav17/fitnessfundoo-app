@@ -1,0 +1,450 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newActivity.EditEvent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_marginTop="57dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_below="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--
+                   <Spinner
+                       android:id="@+id/spinner1"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentLeft="true"
+                       android:popupBackground="@color/btn_login"/>
+            -->
+            <RelativeLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="3dp"
+                android:id="@+id/lay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/sTtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select Sport :"
+                    android:layout_marginTop="5dp"
+                    android:textStyle="bold"/>
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center"
+                    android:layout_below="@+id/sTtitle"
+                    android:background="@drawable/spinner_background"
+                    android:gravity="center"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:spinnerMode="dropdown" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/lay2"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/lay1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <EditText
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/event_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Event Name*"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:layout_below="@+id/event_title"
+                    android:id="@+id/textView1"
+                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Event Date :"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:background="@drawable/bg_edittext"
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView1"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:hint="Select Date*"
+                    android:inputType="date" />
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView2"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Event Start Time :"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:background="@drawable/bg_edittext"
+                    android:id="@+id/stimeEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView2"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:hint="Select Start Time*"
+                    android:inputType="time" />
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/textView3"
+                    android:layout_below="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Event End Time :"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:background="@drawable/bg_edittext"
+                    android:id="@+id/etimeEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textView3"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:hint="Select Start Time*"
+                    android:inputType="time" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay3"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/lay2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/autoCompleteTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:hint="Enter Place Here*"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    />
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/header"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/autoCompleteTextView"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="Selected Place :"
+                    android:textStyle="bold"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/street"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/header"
+                    android:hint="Street No"
+                    />
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/colony"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/street"
+                    android:hint="Colony Name"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/colony"
+                    android:hint="Place Name"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/name"
+                    android:hint="Place Full Address "/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/cityName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/address"
+                    android:hint="City Name"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/state"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/cityName"
+                    android:autoLink="phone"
+                    android:hint="State Name"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/longitude"
+                    android:layout_below="@+id/latitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="invisible"/>
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/state"
+                    android:text="India"
+                    android:hint="Country Name"/>
+
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/pin"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/country"
+                    android:hint="Pin Code"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/lay4"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_below="@+id/lay3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button android:id="@+id/contactButton"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Public/Private*"/>
+
+                <EditText
+                    android:id="@+id/contactNo"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/contactButton"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:hint="Host Contact Number*"/>
+
+                <Button android:id="@+id/emailButton"
+                    android:layout_below="@+id/contactNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="10dp"
+                    android:text="Public/Private*"/>
+
+                <EditText
+                    android:background="@drawable/bg_edittext"
+                    android:id="@+id/emailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/emailButton"
+                    android:layout_alignParentRight="true"
+                    android:ems="10"
+                    android:hint="Host Email Id*"/>
+
+
+                <TextView
+                    android:textSize="15dp"
+                    android:textColor="@color/black"
+                    android:id="@+id/event_desc"
+                    android:layout_below="@+id/emailId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Please enter Event Description :"
+                    android:layout_marginLeft="5dp"
+                    android:textStyle="bold"/>
+                <EditText
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_edittext"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/event_desc1"
+                    android:layout_below="@+id/event_desc"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Description "
+                    android:gravity="top|left"
+                    android:inputType="textMultiLine"
+                    android:lines="20"
+                    android:minLines="5"
+                    android:scrollHorizontally="false"
+                    android:scrollbars="vertical"
+                    android:singleLine="false"/>
+
+
+                <Button android:id="@+id/numberOfparticipant"
+                    android:layout_below="@+id/event_desc1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:text="Number Of Participant"/>
+            </RelativeLayout>
+
+
+   <!--         <Button android:id="@+id/submitEvent"
+                android:layout_marginTop="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:layout_below="@+id/lay4"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:background="@drawable/custom_button"/>
+-->
+            <Button
+                android:id="@+id/submitEvent"
+                android:gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_below="@+id/lay4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/fitness_fundoo__color"
+                android:text="Update"
+                android:textColor="@color/white" />
+
+
+
+            <TextView
+                android:id="@+id/att"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:autoLink="web"/>
+<!--
+            <ImageView
+                android:id="@+id/poweredBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/att"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/powered_by_google_light"/>
+-->
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="bg_login">#a81800</color>
+    <color name="bg_register">#f03018</color>
+    <color name="black">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="white">#ffffff</color>
+    <color name="transperent">#F5F5F5</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#f06060</color>
+    <color name="input_register_bg">#901818</color>
+    <color name="input_register_hint">#f09090</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="btn_logut_bg">#ff6861</color>
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color> -->
+    <color name="colorPrimary">#3060a8</color>
+    <color name="colorPrimaryDark">#184890</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#303030</color>
+    <color name="list_background_pressed">#992416</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+  <!--  <color name="fitness_fundoo__color"> #660066</color> -->
+    <color name="fitness_fundoo__color"> #4878c0</color>
+    <color name="ab_back"> #ff0000 </color>
+
+    <color name="ColorPrimaryOrange">#FF5722</color>
+    <color name="ColorPrimaryDarkOrange">#E64A19</color>
+
+
+    <color name="genre">#666666</color>
+    <color name="year">#888888</color>
+    <color name="list_divider">#d9d9d9</color>
+    <color name="list_row_start_color">#ffffff</color>
+    <color name="list_row_end_color">#ffffff</color>
+    <color name="list_row_hover_start_color">#ebeef0</color>
+    <color name="list_row_hover_end_color">#ebeef0</color>
+
+    <color name="colorPrimary_chat">#7B1FA2</color>
+    <color name="colorPrimaryDark_chat">#6A1B9A</color>
+    <color name="colorAccent_chat">#EA80FC</color>
+    <color name="list_divider_chat">#dedede</color>
+    <color name="bg_bubble_self">#E1E1E1</color>
+
+    <color name="sky_blue">#24c6d5</color>
+    <color name="parrot_green">#57dd86</color>
+    <color name="purple">#ad7dcf</color>
+    <color name="red">#ff484d</color>
+    <color name="yellow">#fcba59</color>
+    <color name="yellow1">#FCFC0D</color>
+    <color name="yellow2">#F5F531</color>
+    <color name="grey05">#E3E3DE</color>
+    <color name="orange4">#FFA500</color>
+    <color name="orange5">#E8A01C</color>
+    <color name="blue2">#3F51B5</color>
+    <color name="blue25">#303F9F</color>
+    <color name="darkGray">#E3E3DE</color>
+    <string-array name="movie_serial_bg">
+
+        <item>#24c6d5</item>
+        <item>#57dd86</item>
+        <item>#ad7dcf</item>
+        <item>#ff484d</item>
+        <item>#fcba59</item>
+        <item>#24c6d5</item>
+    </string-array>
+
+</resources>

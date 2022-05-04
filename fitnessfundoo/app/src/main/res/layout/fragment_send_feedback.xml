@@ -1,0 +1,132 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fitnessfundoo.www.fitnessfundoo.MainActivity"
+    android:background="#ffffff">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@color/colorPrimary"
+            android:elevation="6dp"
+            android:minHeight="?android:attr/actionBarSize"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    </LinearLayout>
+
+
+
+    <!-- Framelayout to display Fragments -->
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+<!--    <TextView
+        android:id="@+id/txtLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_centerInParent="true"
+        android:textSize="16dp"
+        android:text="My Events"/>
+
+    <ImageView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLabel"
+        android:src="@drawable/ic_communities"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+-->
+
+    <EditText
+        android:layout_marginTop="60dp"
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="*Your Name"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/user_email"
+        android:layout_below="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="*Email"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:id="@+id/user_contact"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/user_email"
+        android:layout_height="wrap_content"
+        android:hint="*Contact Number"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        />
+
+     <EditText
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/bg_edittext"
+        android:layout_marginTop="10dp"
+        android:id="@+id/user_message"
+        android:layout_below="@+id/user_contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Your Message"
+        android:gravity="top|left"
+        android:inputType="textMultiLine"
+        android:lines="20"
+        android:minLines="5"
+        android:scrollHorizontally="false"
+        android:scrollbars="vertical"
+        android:singleLine="false"/>
+
+
+    <Button
+        android:id="@+id/submit_feedback"
+        android:gravity="center"
+        android:layout_below="@+id/user_message"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/fitness_fundoo__color"
+        android:text="Submit"
+        android:textColor="@color/white" />
+
+
+
+</RelativeLayout>
+
+</ScrollView>
+
+

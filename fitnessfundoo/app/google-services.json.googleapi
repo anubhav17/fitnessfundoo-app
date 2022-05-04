@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "941290121676",
+    "firebase_url": "https://release-api2.firebaseio.com",
+    "project_id": "release-api2",
+    "storage_bucket": "release-api2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941290121676:android:7005fdc55df4b56d",
+        "android_client_info": {
+          "package_name": "com.fitnessfundoo.www.fitnessfundoo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941290121676-q0ciam0go2a8mjv28boaeatn00j9e91q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDZWRMJ_zdOUQL08SDOQEO2tBzMn2lyGE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

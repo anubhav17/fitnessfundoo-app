@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RatingBar
+            android:id="@+id/getRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5" />
+
+
+        <RatingBar
+            android:id="@+id/setRating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/getRating"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/countText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/getRating"
+            android:layout_toRightOf="@+id/setRating"
+            android:paddingLeft="10dp" />
+
+
+        <EditText
+            android:id="@+id/reviw_edittext"
+            android:layout_below="@+id/setRating"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/reviw_edittext"
+            android:imeActionLabel="Please write your review here."
+            android:gravity="top|left"
+            android:inputType="textEmailAddress|textMultiLine"
+            android:lines="20"
+            android:minLines="5"
+            android:scrollHorizontally="false"
+            android:scrollbars="vertical"
+            android:singleLine="false" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
